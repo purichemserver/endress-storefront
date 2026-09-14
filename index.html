@@ -8,11 +8,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#d3e8f3;
+    --bg:#cde6f3;
     --panel:#171E22;
     --row-alt:#1B2327;
     --border:#2A3438;
-    --text:#0459f7;
+    --text:#0044ff;
     --muted:#8FA0A6;
     --accent:#C17A3E;
     --accent-hover:#D68C4E;
@@ -301,8 +301,8 @@
         <line x1="17" y1="17" x2="23" y2="11" stroke="#E9EFF1" stroke-width="1.5" stroke-linecap="round"/>
       </svg>
       <div>
-        <h1>Endress Instrumentation</h1>
-        <p class="tagline">Process instrumentation stock, updated straight from our warehouse sheet.</p>
+        <h1>PuriChem Endress Instrumentation</h1>
+        <p class="tagline">Endress nstrumentation stock available for direct purchase</p>
       </div>
     </div>
     <div class="status-line" id="status-line"><span class="dot"></span>Loading…</div>
@@ -426,8 +426,8 @@ async function loadStock(){
 
 function qtyBadge(qty){
   if (qty <= 0) return `<span class="qty-badge out">Out of stock</span>`;
-  if (qty <= 3) return `<span class="qty-badge low">${qty} left</span>`;
-  return `<span class="qty-badge ok">${qty} available</span>`;
+  if (qty <= 3) return `<span class="qty-badge low">Limited stock</span>`;
+  return `<span class="qty-badge ok">In stock</span>`;
 }
 
 function render(){
